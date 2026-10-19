@@ -1,0 +1,64 @@
+# =====================================================
+# .gitignore for Data Analytics homework
+# =====================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Secrets and keys (NEVER publish) ----------
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+.streamlit/secrets.toml
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---------- Tool caches ----------
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+
+# ---------- Logs ----------
+*.log
+
+# ---------- Large data files ----------
+# Put raw/large datasets here (GitHub rejects files over 100 MB)
+data/raw/
+data/large/
+
+# ---------- Temporary Excel / Word files ----------
+~$*.xlsx
+~$*.xls
+~$*.docx
+
+# ---------- dbt (needed later) ----------
+target/
+dbt_packages/
+logs/
+
+# ---------- System files ----------
+# Windows
+Thumbs.db
+desktop.ini
+# Files created when copying from Windows to WSL
+*:Zone.Identifier
+# macOS
+.DS_Store
